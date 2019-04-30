@@ -1,0 +1,6 @@
+<h1>Gossip</h1>
+<p>Title : <%= @gossip.title %></p> 
+<p>Author: <a href="/user/<%= @gossip.user_id %>"><%= @gossip.user.first_name %></a></p>
+<p>Creation date: <%= @gossip.created_at%></p>
+</br>
+<p>Content: <%= @gossip.content %></p>
