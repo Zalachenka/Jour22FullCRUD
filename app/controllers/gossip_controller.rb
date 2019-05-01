@@ -1,7 +1,5 @@
 class GossipController < ApplicationController
-  def index
-    # Méthode qui récupère tous les potins et les envoie à la view index (index.html.erb) pour affichage
-  end
+  add_flash_types :success , :danger
 
   def show
     # Méthode qui récupère le potin concerné et l'envoie à la view show (show.html.erb) pour affichage
@@ -21,9 +19,9 @@ class GossipController < ApplicationController
     # puts params
 
     if @gossip.valid?
-      redirect_to '/home'
+      redirect_to '/home' , success: "The super potin was succesfully saved !"
     else
-      render 'new'
+      render 'new' , danger: "Error : you need to complete this field "
       puts 'Gossip is invalid'
 
       end
