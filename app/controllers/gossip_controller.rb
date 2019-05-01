@@ -46,4 +46,7 @@ class GossipController < ApplicationController
       end
    end
 
+   def destroy
+   end
+
 end

@@ -7,4 +7,6 @@
 </br>
 <p>City of this author: <a href="/city/<%= @gossip.user.city_id %>"><%= @gossip.user.city.name %></a></p>
 
-<a href="<%= edit_gossip_path(@gossip.id) %>" class="btn btn-primary"> Edit gossip</a>
+<a href="<%= edit_gossip_path(@gossip.id) %>" class="btn btn-secondary"> Edit gossip</a>
+
+<a href="<%= gossip_path(@gossip.id) %>" class="btn btn-danger" data-confirm="For real bro ?"> Delete gossip</a>
