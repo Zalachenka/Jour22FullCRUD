@@ -5,5 +5,4 @@
 </br>
 <p>Content: <%= @gossip.content %></p>
 </br>
-<p>La ville de <%= @gossip.user.first_name %> : <a href="/user/<%= @gossip.user.city.name %>"><%= @gossip.user.city_id %></a></p>
-<p>test ville de <%= @gossip.user.first_name %> : <a href="/user/<%= @gossip.user.city_id %>"><%= @gossip.user.city.name %></a></p>
+<p>City of this gossip  <%= @gossip.user.first_name %> : <a href="/city/<%= @gossip.user.city_id %>"><%= @gossip.user.city.name %></a></p>
