@@ -1,9 +1,0 @@
-      <h1> Author : <%= @user.first_name %></h1><br>
-     <b>Age :</b><p><%= @user.age %></p>
-     <b>City :</b><p><%= @user.city.name %></p>
-     <b>Active gossips list :</b>
-     <p> <% @user.gossips.each do |gossip| %>
-
-      - "<%= gossip.content %>"<br>
-      <% end %>
-    </p>
