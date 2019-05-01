@@ -5,4 +5,6 @@
 </br>
 <p>Content: <%= @gossip.content %></p>
 </br>
-<p>City of this gossip  <%= @gossip.user.first_name %> : <a href="/city/<%= @gossip.user.city_id %>"><%= @gossip.user.city.name %></a></p>
+<p>City of this author: <a href="/city/<%= @gossip.user.city_id %>"><%= @gossip.user.city.name %></a></p>
+
+<a href="<%= edit_gossip_path(@gossip.id) %>" class="btn btn-primary"> Edit gossip</a>
